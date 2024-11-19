@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActivateOtherAndHideSelf : MonoBehaviour
+public class Unkown2 : MonoBehaviour
 {
     public SpriteRenderer visibility;
     public GameObject gameOverScreen;
