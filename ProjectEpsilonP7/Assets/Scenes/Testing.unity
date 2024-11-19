@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 47066227}
   - component: {fileID: 47066226}
   - component: {fileID: 47066225}
+  - component: {fileID: 47066228}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -185,6 +186,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &47066228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47066224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd019253549b934aa3e24ab2479091d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 47066226}
+  canWeGetMuchHigher: 1
+  jumpNDesend: 1
+  leftNRight: 1
+  awayNToward: 1
+  speed: 1
 --- !u!1 &78606409
 GameObject:
   m_ObjectHideFlags: 0
@@ -15085,7 +15104,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1942567799}
   - component: {fileID: 1942567798}
-  - component: {fileID: 1942567800}
   m_Layer: 0
   m_Name: Epsilon
   m_TagString: Untagged
@@ -15160,22 +15178,6 @@ Transform:
   m_Father: {fileID: 47066227}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1942567800
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1942567797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cd019253549b934aa3e24ab2479091d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 47066226}
-  leftNRight: 0
-  awayNToward: 0
-  speed: 3
 --- !u!1 &2037306830
 GameObject:
   m_ObjectHideFlags: 0
