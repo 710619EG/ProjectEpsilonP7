@@ -643,6 +643,7 @@ GameObject:
   - component: {fileID: 260278844}
   - component: {fileID: 260278845}
   - component: {fileID: 260278846}
+  - component: {fileID: 260278847}
   m_Layer: 0
   m_Name: Epsilon
   m_TagString: Untagged
@@ -710,7 +711,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 260278840}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.615, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -847,6 +848,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &260278847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260278840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f986df4d6cfb3e49961136a4fd8b8e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &281500139
 GameObject:
   m_ObjectHideFlags: 0
@@ -16212,7 +16225,7 @@ Camera:
   m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
+  m_FocalLength: 26.149958
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -16247,7 +16260,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2124328704}
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -10.55, y: 2.52, z: -6.55}
+  m_LocalPosition: {x: -0.71, y: 1.44, z: -1.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
