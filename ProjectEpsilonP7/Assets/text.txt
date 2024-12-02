@@ -1,1 +1,0 @@
-I made a new unity project using 3D core, named it ProjectEpsilonV2P7 at first. I took all the files you guys put in(Art, sounds, concept animations, etc.) and then transferred them to the new project. Deleted the old one then renamed the new one ProjectEpsilonP7. I made a new scene called Testing, multiple new folders, an

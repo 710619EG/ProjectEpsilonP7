@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     public float jumpNDesend;
     public float leftNRight;
     public float awayNToward;
-    public float speed = 1;
+    public float speed = 2;
     // Start is called before the first frame update
     void Start()
     {

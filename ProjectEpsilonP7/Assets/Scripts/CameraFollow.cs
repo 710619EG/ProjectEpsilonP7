@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    GameObject Epsilon;
+    public Transform Target;
     // Start is called before the first frame update
     void Start()
     
     {
-        Epsilon = GameObject.Find("Epsilon");
+        Target.GetComponent <transform>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(Epsilon.transform.position.x, Epsilon.transform.position.y + 5, Epsilon.transform.position.z - 10);
+        moveTo = new Vector3(Target.transform.position.x, Target.transform.position.y + 5, Target.transform.position.z - 10);
+        transform.Translate(moveTo);
     }
 }

@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_SpriteShader
-  m_Shader: {fileID: -6465566751694194690, guid: f13c6e45eb154004ba5a4e665f86c14b, type: 3}
+  m_Name: Tiles
+  m_Shader: {fileID: -6465566751694194690, guid: 2853dd94da7befa4ea06afc8c1064992, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 2
