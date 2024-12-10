@@ -5,14 +5,14 @@ using UnityEngine;
 public class Unkown2 : MonoBehaviour
 {
     public SpriteRenderer visibility;
-    public GameObject gameOverScreen;
+    public GameObject MainTitleScreen;
     void Start()
     {
         visibility = GetComponent<SpriteRenderer>();
     }
-    void OnTriggerEnter2D(Collider2D other)
+    void OnClick(Collider2D other)
     {
-        gameOverScreen.SetActive(true);
-        visibility.gameObject.SetActive(false);
+        MainTitleScreen.SetActive(false);
+        
     }
 }
