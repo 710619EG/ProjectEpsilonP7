@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/ContainmentRooms.unity
+    guid: c21bc22fc01c00641982b555d097a2c4
   m_configObjects: {}

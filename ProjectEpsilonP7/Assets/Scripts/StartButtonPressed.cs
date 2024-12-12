@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Unkown1 : MonoBehaviour
+public class StartButtonPressed : MonoBehaviour
 {
-    public void RestartButton()
+    public void LoadStart()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("ContainmentRooms");
     }
 }
