@@ -5,10 +5,11 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public Rigidbody playerRb;
-    float canWeGetMuchHigher = 10.0f;
+    public float canWeGetMuchHigher = 10.0f;
     float leftNRight;
     float awayNToward;
     public float speed = 4.0f;
+    public bool isOnGround = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +22,17 @@ public class PlayerController : MonoBehaviour
         leftNRight = Input.GetAxis("LeftNRight");
         transform.Translate (Vector3.forward * Time.deltaTime * speed * awayNToward);
         transform.Translate(Vector3.right * Time.deltaTime * speed * leftNRight);
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
         {
              playerRb.AddForce(Vector3.up * canWeGetMuchHigher, ForceMode.Impulse);
+             isOnGround = false;
         }
     } 
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+             isOnGround = true;
+        }
+    }
 }
