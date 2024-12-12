@@ -4,24 +4,35 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public Rigidbody rb;
-    public float canWeGetMuchHigher;
-    public float jumpNDesend;
-    public float leftNRight;
-    public float awayNToward;
-    public float speed = 2;
+    public Rigidbody playerRb;
+    public float canWeGetMuchHigher = 10.0f;
+    float leftNRight;
+    float awayNToward;
+    public float speed = 4.0f;
+    public bool isOnGround = true;
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        playerRb = GetComponent<Rigidbody>();
     }
     void Update()
     {
         //Updates the state of the movement keys
-        jumpNDesend = Input.GetAxis("JumpNDesend");
         awayNToward = Input.GetAxis("AwayNToward");
         leftNRight = Input.GetAxis("LeftNRight");
-        rb.AddForce(new Vector3(rb.velocity.x, canWeGetMuchHigher * jumpNDesend, rb.velocity.z));
-        transform.Translate (new Vector3(leftNRight * speed * Time.deltaTime, 0f , awayNToward * speed * Time.deltaTime));
+        transform.Translate (Vector3.forward * Time.deltaTime * speed * awayNToward);
+        transform.Translate(Vector3.right * Time.deltaTime * speed * leftNRight);
+        if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
+        {
+             playerRb.AddForce(Vector3.up * canWeGetMuchHigher, ForceMode.Impulse);
+             isOnGround = false;
+        }
     } 
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+             isOnGround = true;
+        }
+    }
 }

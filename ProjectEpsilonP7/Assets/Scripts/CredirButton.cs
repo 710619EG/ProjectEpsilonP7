@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class CredirButton : MonoBehaviour
 {
+    public GameObject UI;
+    public GameObject MainTitleScreen;
     // Start is called before the first frame update
-    void Start()
+    public void CreditStart()
     {
-        
+        UI.SetActive(true);
+        MainTitleScreen.SetActive(false);
     }
 
     // Update is called once per frame
-    void Update()
+    void OnClick(Collider2D other)
     {
         
+
     }
 }
