@@ -12524,7 +12524,7 @@ GameObject:
   - component: {fileID: 305891580}
   - component: {fileID: 305891579}
   m_Layer: 0
-  m_Name: Black
+  m_Name: BlackVoid
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24273,6 +24273,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 533245577}
+  - component: {fileID: 533245578}
   m_Layer: 0
   m_Name: CameraTarget
   m_TagString: Untagged
@@ -24295,6 +24296,22 @@ Transform:
   m_Father: {fileID: 47066227}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &533245578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533245576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd019253549b934aa3e24ab2479091d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerRb: {fileID: 0}
+  canWeGetMuchHigher: 10
+  speed: 4
+  isOnGround: 1
 --- !u!1 &581168883
 GameObject:
   m_ObjectHideFlags: 0
