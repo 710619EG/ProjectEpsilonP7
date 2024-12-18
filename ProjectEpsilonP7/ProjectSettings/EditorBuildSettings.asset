@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 94b2585bd8f7a96469865cb6a5854d1a
   - enabled: 1
-    path: Assets/Scenes/ContainmentRooms.unity
+    path: Assets/Scenes/ContainmentRooms/ContainmentRooms.unity
     guid: c21bc22fc01c00641982b555d097a2c4
   m_configObjects: {}
