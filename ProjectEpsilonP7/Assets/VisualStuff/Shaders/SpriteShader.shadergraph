@@ -123,8 +123,8 @@
     },
     "m_FragmentContext": {
         "m_Position": {
-            "x": 356.0,
-            "y": 416.0
+            "x": 354.0,
+            "y": 414.0
         },
         "m_Blocks": [
             {
@@ -429,7 +429,7 @@
         "m_Id": "e3b35e08992246aa9aec78a1603a5309"
     },
     "m_AllowMaterialOverride": false,
-    "m_SurfaceType": 1,
+    "m_SurfaceType": 0,
     "m_ZTestMode": 4,
     "m_ZWriteControl": 0,
     "m_AlphaMode": 0,
@@ -466,7 +466,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Smoothness",
     "m_StageCapability": 2,
-    "m_Value": 2.0,
+    "m_Value": 3.0,
     "m_DefaultValue": 0.5,
     "m_Labels": []
 }
@@ -497,9 +497,9 @@
     "m_ShaderOutputName": "Specular",
     "m_StageCapability": 2,
     "m_Value": {
-        "x": 0.5,
-        "y": 0.5,
-        "z": 0.5
+        "x": 0.3207547068595886,
+        "y": 0.3207547068595886,
+        "z": 0.3207547068595886
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -882,7 +882,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Occlusion",
     "m_StageCapability": 2,
-    "m_Value": 0.4000000059604645,
+    "m_Value": 4.880000114440918,
     "m_DefaultValue": 1.0,
     "m_Labels": []
 }
