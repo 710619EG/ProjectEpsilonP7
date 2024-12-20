@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     {
         playerRb = GetComponent<Rigidbody>();
     }
-    void FixedUpdate()
+    void Update()
     {
         //Updates the state of the movement keys
         awayNToward = Input.GetAxis("AwayNToward");
