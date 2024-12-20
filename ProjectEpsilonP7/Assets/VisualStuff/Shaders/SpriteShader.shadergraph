@@ -123,8 +123,8 @@
     },
     "m_FragmentContext": {
         "m_Position": {
-            "x": 354.0,
-            "y": 414.0
+            "x": 356.0,
+            "y": 416.0
         },
         "m_Blocks": [
             {
@@ -466,7 +466,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Smoothness",
     "m_StageCapability": 2,
-    "m_Value": 3.0,
+    "m_Value": 4.0,
     "m_DefaultValue": 0.5,
     "m_Labels": []
 }
@@ -882,7 +882,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Occlusion",
     "m_StageCapability": 2,
-    "m_Value": 4.880000114440918,
+    "m_Value": 0.5,
     "m_DefaultValue": 1.0,
     "m_Labels": []
 }
